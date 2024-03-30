@@ -24,6 +24,8 @@
 		89075C462BB85B49003023B7 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C452BB85B49003023B7 /* CollectionViewCell.swift */; };
 		89075C482BB85B6D003023B7 /* CollectionViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C472BB85B6D003023B7 /* CollectionViewProvider.swift */; };
 		89075C4A2BB85BB9003023B7 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 89075C492BB85BB9003023B7 /* Localizable.xcstrings */; };
+		89075C4C2BB8916D003023B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89075C282BB84E06003023B7 /* LaunchScreen.storyboard */; };
+		89075C4E2BB8C157003023B7 /* SplashScreenAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C4D2BB8C157003023B7 /* SplashScreenAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,7 @@
 		89075C452BB85B49003023B7 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		89075C472BB85B6D003023B7 /* CollectionViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewProvider.swift; sourceTree = "<group>"; };
 		89075C492BB85BB9003023B7 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		89075C4D2BB8C157003023B7 /* SplashScreenAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,7 @@
 		89075C362BB85A43003023B7 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				89075C4F2BB8C1C3003023B7 /* SplashScreen */,
 				89075C422BB85B15003023B7 /* CollectionView */,
 				89075C3F2BB85AF3003023B7 /* TableView */,
 				89075C372BB85A70003023B7 /* Constraints.swift */,
@@ -148,6 +152,14 @@
 				89075C1E2BB84E05003023B7 /* ViewController.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		89075C4F2BB8C1C3003023B7 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				89075C4D2BB8C157003023B7 /* SplashScreenAnimation.swift */,
+			);
+			path = SplashScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +228,7 @@
 				89075C272BB84E06003023B7 /* Assets.xcassets in Resources */,
 				89075C2A2BB84E06003023B7 /* Base in Resources */,
 				89075C4A2BB85BB9003023B7 /* Localizable.xcstrings in Resources */,
+				89075C4C2BB8916D003023B7 /* LaunchScreen.storyboard in Resources */,
 				89075C332BB858C6003023B7 /* iOS.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,6 +247,7 @@
 				89075C3E2BB85AC9003023B7 /* UIViewController.swift in Sources */,
 				89075C3A2BB85A98003023B7 /* UIColor.swift in Sources */,
 				89075C1B2BB84E05003023B7 /* AppDelegate.swift in Sources */,
+				89075C4E2BB8C157003023B7 /* SplashScreenAnimation.swift in Sources */,
 				89075C1D2BB84E05003023B7 /* SceneDelegate.swift in Sources */,
 				89075C412BB85AFF003023B7 /* TableViewProvider.swift in Sources */,
 				89075C252BB84E05003023B7 /* iOS.xcdatamodeld in Sources */,
@@ -333,7 +347,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = Airlance;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
@@ -419,7 +433,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = Airlance;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;

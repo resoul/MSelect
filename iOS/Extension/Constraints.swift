@@ -10,6 +10,22 @@ extension UIView {
         constraints(top: superview?.topAnchor, leading: superview?.leadingAnchor, bottom: superview?.bottomAnchor, trailing: superview?.trailingAnchor)
     }
     
+    func fillCenter(for view: UIView, size: CGSize = .zero) {
+        constraints(top: nil, leading: nil, bottom: nil, trailing: nil, size: size)
+        fillXCenter(for: view)
+        fillYCenter(for: view)
+    }
+    
+    func fillXCenter(for view: UIView) {
+        translatesAutoresizingMaskIntoConstraints = false
+        centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+    }
+    
+    func fillYCenter(for view: UIView) {
+        translatesAutoresizingMaskIntoConstraints = false
+        centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    }
+    
     func constraints(top: NSLayoutYAxisAnchor?, leading: NSLayoutXAxisAnchor?, bottom: NSLayoutYAxisAnchor?, trailing: NSLayoutXAxisAnchor?, padding: UIEdgeInsets = .zero, size: CGSize = .zero) {
         translatesAutoresizingMaskIntoConstraints = false
         if let top = top {
