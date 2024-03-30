@@ -10,10 +10,20 @@
 		89075C1B2BB84E05003023B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C1A2BB84E05003023B7 /* AppDelegate.swift */; };
 		89075C1D2BB84E05003023B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C1C2BB84E05003023B7 /* SceneDelegate.swift */; };
 		89075C1F2BB84E05003023B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C1E2BB84E05003023B7 /* ViewController.swift */; };
-		89075C222BB84E05003023B7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 89075C212BB84E05003023B7 /* Base */; };
 		89075C252BB84E05003023B7 /* iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 89075C232BB84E05003023B7 /* iOS.xcdatamodeld */; };
 		89075C272BB84E06003023B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89075C262BB84E06003023B7 /* Assets.xcassets */; };
 		89075C2A2BB84E06003023B7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 89075C292BB84E06003023B7 /* Base */; };
+		89075C332BB858C6003023B7 /* iOS.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 89075C322BB858C6003023B7 /* iOS.xcconfig */; };
+		89075C352BB8596F003023B7 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C342BB8596F003023B7 /* Environment.swift */; };
+		89075C382BB85A70003023B7 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C372BB85A70003023B7 /* Constraints.swift */; };
+		89075C3A2BB85A98003023B7 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C392BB85A98003023B7 /* UIColor.swift */; };
+		89075C3C2BB85AB2003023B7 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C3B2BB85AB2003023B7 /* UIView.swift */; };
+		89075C3E2BB85AC9003023B7 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C3D2BB85AC9003023B7 /* UIViewController.swift */; };
+		89075C412BB85AFF003023B7 /* TableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C402BB85AFF003023B7 /* TableViewProvider.swift */; };
+		89075C442BB85B2E003023B7 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C432BB85B2E003023B7 /* CollectionView.swift */; };
+		89075C462BB85B49003023B7 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C452BB85B49003023B7 /* CollectionViewCell.swift */; };
+		89075C482BB85B6D003023B7 /* CollectionViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C472BB85B6D003023B7 /* CollectionViewProvider.swift */; };
+		89075C4A2BB85BB9003023B7 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 89075C492BB85BB9003023B7 /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,12 +31,22 @@
 		89075C1A2BB84E05003023B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89075C1C2BB84E05003023B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		89075C1E2BB84E05003023B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		89075C212BB84E05003023B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89075C242BB84E05003023B7 /* iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOS.xcdatamodel; sourceTree = "<group>"; };
 		89075C262BB84E06003023B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89075C292BB84E06003023B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89075C2B2BB84E06003023B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89075C2F2BB84E1E003023B7 /* iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOS.entitlements; sourceTree = "<group>"; };
+		89075C322BB858C6003023B7 /* iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = iOS.xcconfig; sourceTree = "<group>"; };
+		89075C342BB8596F003023B7 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		89075C372BB85A70003023B7 /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		89075C392BB85A98003023B7 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		89075C3B2BB85AB2003023B7 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		89075C3D2BB85AC9003023B7 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		89075C402BB85AFF003023B7 /* TableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProvider.swift; sourceTree = "<group>"; };
+		89075C432BB85B2E003023B7 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		89075C452BB85B49003023B7 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		89075C472BB85B6D003023B7 /* CollectionViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewProvider.swift; sourceTree = "<group>"; };
+		89075C492BB85BB9003023B7 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +81,7 @@
 			children = (
 				89075C312BB84E39003023B7 /* App */,
 				89075C302BB84E32003023B7 /* Resource */,
+				89075C362BB85A43003023B7 /* Extension */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -69,11 +90,12 @@
 			isa = PBXGroup;
 			children = (
 				89075C2F2BB84E1E003023B7 /* iOS.entitlements */,
-				89075C202BB84E05003023B7 /* Main.storyboard */,
 				89075C262BB84E06003023B7 /* Assets.xcassets */,
 				89075C282BB84E06003023B7 /* LaunchScreen.storyboard */,
 				89075C2B2BB84E06003023B7 /* Info.plist */,
 				89075C232BB84E05003023B7 /* iOS.xcdatamodeld */,
+				89075C322BB858C6003023B7 /* iOS.xcconfig */,
+				89075C492BB85BB9003023B7 /* Localizable.xcstrings */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -81,11 +103,51 @@
 		89075C312BB84E39003023B7 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				89075C4B2BB85E98003023B7 /* Main */,
 				89075C1A2BB84E05003023B7 /* AppDelegate.swift */,
 				89075C1C2BB84E05003023B7 /* SceneDelegate.swift */,
-				89075C1E2BB84E05003023B7 /* ViewController.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		89075C362BB85A43003023B7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				89075C422BB85B15003023B7 /* CollectionView */,
+				89075C3F2BB85AF3003023B7 /* TableView */,
+				89075C372BB85A70003023B7 /* Constraints.swift */,
+				89075C342BB8596F003023B7 /* Environment.swift */,
+				89075C392BB85A98003023B7 /* UIColor.swift */,
+				89075C3B2BB85AB2003023B7 /* UIView.swift */,
+				89075C3D2BB85AC9003023B7 /* UIViewController.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		89075C3F2BB85AF3003023B7 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				89075C402BB85AFF003023B7 /* TableViewProvider.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		89075C422BB85B15003023B7 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				89075C432BB85B2E003023B7 /* CollectionView.swift */,
+				89075C452BB85B49003023B7 /* CollectionViewCell.swift */,
+				89075C472BB85B6D003023B7 /* CollectionViewProvider.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		89075C4B2BB85E98003023B7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				89075C1E2BB84E05003023B7 /* ViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +192,11 @@
 			knownRegions = (
 				en,
 				Base,
+				it,
+				ru,
+				uk,
+				es,
+				fr,
 			);
 			mainGroup = 89075BEF2BB84B98003023B7;
 			productRefGroup = 89075C182BB84E05003023B7 /* Products */;
@@ -148,7 +215,8 @@
 			files = (
 				89075C272BB84E06003023B7 /* Assets.xcassets in Resources */,
 				89075C2A2BB84E06003023B7 /* Base in Resources */,
-				89075C222BB84E05003023B7 /* Base in Resources */,
+				89075C4A2BB85BB9003023B7 /* Localizable.xcstrings in Resources */,
+				89075C332BB858C6003023B7 /* iOS.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,24 +227,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89075C3C2BB85AB2003023B7 /* UIView.swift in Sources */,
 				89075C1F2BB84E05003023B7 /* ViewController.swift in Sources */,
+				89075C482BB85B6D003023B7 /* CollectionViewProvider.swift in Sources */,
+				89075C462BB85B49003023B7 /* CollectionViewCell.swift in Sources */,
+				89075C3E2BB85AC9003023B7 /* UIViewController.swift in Sources */,
+				89075C3A2BB85A98003023B7 /* UIColor.swift in Sources */,
 				89075C1B2BB84E05003023B7 /* AppDelegate.swift in Sources */,
 				89075C1D2BB84E05003023B7 /* SceneDelegate.swift in Sources */,
+				89075C412BB85AFF003023B7 /* TableViewProvider.swift in Sources */,
 				89075C252BB84E05003023B7 /* iOS.xcdatamodeld in Sources */,
+				89075C382BB85A70003023B7 /* Constraints.swift in Sources */,
+				89075C442BB85B2E003023B7 /* CollectionView.swift in Sources */,
+				89075C352BB8596F003023B7 /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		89075C202BB84E05003023B7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				89075C212BB84E05003023B7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		89075C282BB84E06003023B7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -202,6 +271,7 @@
 		};
 		89075C2C2BB84E06003023B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89075C322BB858C6003023B7 /* iOS.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -260,6 +330,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOS/Resource/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Airlance;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -277,6 +349,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.airlance.iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -287,6 +363,7 @@
 		};
 		89075C2D2BB84E06003023B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89075C322BB858C6003023B7 /* iOS.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -339,6 +416,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOS/Resource/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Airlance;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -355,6 +434,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.airlance.iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
