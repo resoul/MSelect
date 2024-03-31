@@ -2,7 +2,6 @@
   "sourceLanguage" : "en",
   "strings" : {
     "welcome" : {
-      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {

@@ -12,6 +12,15 @@ class AuthController: UIViewController {
     private let networkViewModel = NetworkViewModel()
     private var cancellables = Set<AnyCancellable>()
     
+    private let welcomeLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .label
+        label.text = String(localized: "welcome")
+        label.font = FontManager.montserrat(size: 24, weight: .medium)
+        
+        return label
+    }()
+    
     private lazy var logoView: UIImageView = {
         let view = UIImageView()
         view.contentMode = .scaleAspectFit
@@ -25,9 +34,11 @@ class AuthController: UIViewController {
         view.backgroundColor = .systemBackground
         let button = ASAuthorizationAppleIDButton(type: .default, style: .whiteOutline)
         button.addTarget(self, action: #selector(handleAppleIDButton), for: .touchUpInside)
-        view.addSubviews(logoView, button)
+        view.addSubviews(logoView, button, welcomeLabel)
         button.constraints(top: nil, leading: nil, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: nil, padding: .init(top: 0, left: 0, bottom: 20, right: 0), size: .init(width: 350, height: 50))
+        welcomeLabel.constraints(top: view.safeAreaLayoutGuide.topAnchor, leading: nil, bottom: nil, trailing: nil, padding: .init(top: 140, left: 0, bottom: 40, right: 0))
         button.fillXCenter(for: view)
+        welcomeLabel.fillXCenter(for: view)
         logoView.fillCenter(for: view, size: .init(width: 640, height: 640))
     }
     
@@ -64,14 +75,15 @@ extension AuthController: ASAuthorizationControllerDelegate, ASAuthorizationCont
         guard let credential = authorization.credential as? ASAuthorizationAppleIDCredential, let token = credential.identityToken else {
             return
         }
-        print(credential.fullName)
-        print(credential.email)
+//        print(credential.fullName)
+//        print(credential.email)
         
         if let identityToken = String(data: token, encoding: .utf8) {
             networkViewModel.$data
                 .sink { [weak self] in self?.handleData($0, userIdentifier: credential.user)}
                 .store(in: &cancellables)
-            networkViewModel.validateToken(for: URL(string: "https://example.com/token")!, token: identityToken)
+            guard let authUrl = URL(string: "https://\(Environment.baseURL)/account/validate/token") else { return }
+            networkViewModel.validateToken(for: authUrl, token: identityToken)
         }
     }
     
