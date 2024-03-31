@@ -12,7 +12,6 @@
 		89075C1F2BB84E05003023B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C1E2BB84E05003023B7 /* ViewController.swift */; };
 		89075C252BB84E05003023B7 /* iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 89075C232BB84E05003023B7 /* iOS.xcdatamodeld */; };
 		89075C272BB84E06003023B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89075C262BB84E06003023B7 /* Assets.xcassets */; };
-		89075C2A2BB84E06003023B7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 89075C292BB84E06003023B7 /* Base */; };
 		89075C332BB858C6003023B7 /* iOS.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 89075C322BB858C6003023B7 /* iOS.xcconfig */; };
 		89075C352BB8596F003023B7 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C342BB8596F003023B7 /* Environment.swift */; };
 		89075C382BB85A70003023B7 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C372BB85A70003023B7 /* Constraints.swift */; };
@@ -26,6 +25,10 @@
 		89075C4A2BB85BB9003023B7 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 89075C492BB85BB9003023B7 /* Localizable.xcstrings */; };
 		89075C4C2BB8916D003023B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89075C282BB84E06003023B7 /* LaunchScreen.storyboard */; };
 		89075C4E2BB8C157003023B7 /* SplashScreenAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C4D2BB8C157003023B7 /* SplashScreenAnimation.swift */; };
+		89075C532BB8CCF4003023B7 /* KeychainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C522BB8CCF4003023B7 /* KeychainItem.swift */; };
+		89075C562BB976A6003023B7 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C552BB976A6003023B7 /* Network.swift */; };
+		89075C5B2BB9C1D0003023B7 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C5A2BB9C1D0003023B7 /* AuthController.swift */; };
+		89075C5E2BB9D566003023B7 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C5D2BB9D566003023B7 /* Account.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,10 @@
 		89075C472BB85B6D003023B7 /* CollectionViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewProvider.swift; sourceTree = "<group>"; };
 		89075C492BB85BB9003023B7 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		89075C4D2BB8C157003023B7 /* SplashScreenAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenAnimation.swift; sourceTree = "<group>"; };
+		89075C522BB8CCF4003023B7 /* KeychainItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItem.swift; sourceTree = "<group>"; };
+		89075C552BB976A6003023B7 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		89075C5A2BB9C1D0003023B7 /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
+		89075C5D2BB9D566003023B7 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +123,8 @@
 		89075C362BB85A43003023B7 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				89075C5C2BB9D55F003023B7 /* Account */,
+				89075C542BB97680003023B7 /* Network */,
 				89075C4F2BB8C1C3003023B7 /* SplashScreen */,
 				89075C422BB85B15003023B7 /* CollectionView */,
 				89075C3F2BB85AF3003023B7 /* TableView */,
@@ -124,6 +133,7 @@
 				89075C392BB85A98003023B7 /* UIColor.swift */,
 				89075C3B2BB85AB2003023B7 /* UIView.swift */,
 				89075C3D2BB85AC9003023B7 /* UIViewController.swift */,
+				89075C522BB8CCF4003023B7 /* KeychainItem.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -150,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				89075C1E2BB84E05003023B7 /* ViewController.swift */,
+				89075C5A2BB9C1D0003023B7 /* AuthController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -160,6 +171,22 @@
 				89075C4D2BB8C157003023B7 /* SplashScreenAnimation.swift */,
 			);
 			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		89075C542BB97680003023B7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				89075C552BB976A6003023B7 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		89075C5C2BB9D55F003023B7 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				89075C5D2BB9D566003023B7 /* Account.swift */,
+			);
+			path = Account;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,7 +253,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				89075C272BB84E06003023B7 /* Assets.xcassets in Resources */,
-				89075C2A2BB84E06003023B7 /* Base in Resources */,
 				89075C4A2BB85BB9003023B7 /* Localizable.xcstrings in Resources */,
 				89075C4C2BB8916D003023B7 /* LaunchScreen.storyboard in Resources */,
 				89075C332BB858C6003023B7 /* iOS.xcconfig in Resources */,
@@ -242,7 +268,10 @@
 			files = (
 				89075C3C2BB85AB2003023B7 /* UIView.swift in Sources */,
 				89075C1F2BB84E05003023B7 /* ViewController.swift in Sources */,
+				89075C562BB976A6003023B7 /* Network.swift in Sources */,
+				89075C532BB8CCF4003023B7 /* KeychainItem.swift in Sources */,
 				89075C482BB85B6D003023B7 /* CollectionViewProvider.swift in Sources */,
+				89075C5E2BB9D566003023B7 /* Account.swift in Sources */,
 				89075C462BB85B49003023B7 /* CollectionViewCell.swift in Sources */,
 				89075C3E2BB85AC9003023B7 /* UIViewController.swift in Sources */,
 				89075C3A2BB85A98003023B7 /* UIColor.swift in Sources */,
@@ -251,6 +280,7 @@
 				89075C1D2BB84E05003023B7 /* SceneDelegate.swift in Sources */,
 				89075C412BB85AFF003023B7 /* TableViewProvider.swift in Sources */,
 				89075C252BB84E05003023B7 /* iOS.xcdatamodeld in Sources */,
+				89075C5B2BB9C1D0003023B7 /* AuthController.swift in Sources */,
 				89075C382BB85A70003023B7 /* Constraints.swift in Sources */,
 				89075C442BB85B2E003023B7 /* CollectionView.swift in Sources */,
 				89075C352BB8596F003023B7 /* Environment.swift in Sources */,
@@ -274,12 +304,14 @@
 		89075BF42BB84B99003023B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 			};
 			name = Debug;
 		};
 		89075BF52BB84B99003023B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 			};
 			name = Release;
 		};
@@ -350,7 +382,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -436,7 +468,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

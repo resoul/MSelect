@@ -2,10 +2,9 @@
 //  SceneDelegate.swift
 //  iOS
 //
-//  Created by resoul on 30.03.2024.
-//
 
 import UIKit
+import AuthenticationServices
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -20,8 +19,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = ViewController()
-        window?.makeKeyAndVisible()
+        
+        let appleIDProvider = ASAuthorizationAppleIDProvider()
+        appleIDProvider.getCredentialState(forUserID: KeychainItem.currentUserIdentifier) { (credentialState, error) in
+            DispatchQueue.main.async {
+                switch credentialState {
+                case .authorized:
+                    self.window?.rootViewController = ViewController()
+                    self.window?.makeKeyAndVisible()
+                case .revoked, .notFound:
+                    self.window?.rootViewController = AuthController()
+                    self.window?.makeKeyAndVisible()
+                default:
+                    if let error = error {
+                        print(error.localizedDescription)
+                    }
+                }
+            }
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

@@ -7,6 +7,8 @@ import UIKit
 import QuartzCore
 
 class SplashScreenAnimation: NSObject, CAAnimationDelegate {
+    
+    private var removeFromSuperview: Bool = true
 
     let animationView: UIImageView = {
         let view = UIImageView()
@@ -15,10 +17,11 @@ class SplashScreenAnimation: NSObject, CAAnimationDelegate {
         return view
     }()
     
-    func configure(parentView: UIView, image: UIImage?, size: CGSize) {
+    func configure(parentView: UIView, image: UIImage?, size: CGSize, removeFromSuperview: Bool = true) {
         animationView.image = image
         parentView.addSubview(animationView)
         animationView.fillCenter(for: parentView, size: size)
+        self.removeFromSuperview = removeFromSuperview
     }
     
     func showScaleAnimation() {
@@ -33,6 +36,8 @@ class SplashScreenAnimation: NSObject, CAAnimationDelegate {
     }
     
     func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
-        animationView.removeFromSuperview()
+        if removeFromSuperview {
+            animationView.removeFromSuperview()
+        }
     }
 }
