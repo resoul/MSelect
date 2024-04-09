@@ -6,21 +6,363 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		890408072BB9FBC100000A0F /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890408062BB9FBC100000A0F /* FontManager.swift */; };
+		890408192BB9FDAE00000A0F /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8904080C2BB9FDAD00000A0F /* Roboto-Italic.ttf */; };
+		8904081A2BB9FDAE00000A0F /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8904080D2BB9FDAD00000A0F /* Roboto-Medium.ttf */; };
+		8904081B2BB9FDAE00000A0F /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8904080E2BB9FDAD00000A0F /* Roboto-Thin.ttf */; };
+		8904081C2BB9FDAE00000A0F /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8904080F2BB9FDAD00000A0F /* Roboto-Bold.ttf */; };
+		8904081D2BB9FDAE00000A0F /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 890408102BB9FDAD00000A0F /* Roboto-BoldItalic.ttf */; };
+		8904081E2BB9FDAE00000A0F /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 890408112BB9FDAD00000A0F /* LICENSE.txt */; };
+		8904081F2BB9FDAE00000A0F /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 890408122BB9FDAE00000A0F /* Roboto-ThinItalic.ttf */; };
+		890408202BB9FDAE00000A0F /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 890408132BB9FDAE00000A0F /* Roboto-BlackItalic.ttf */; };
+		890408212BB9FDAE00000A0F /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 890408142BB9FDAE00000A0F /* Roboto-MediumItalic.ttf */; };
+		890408222BB9FDAE00000A0F /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 890408152BB9FDAE00000A0F /* Roboto-Regular.ttf */; };
+		890408232BB9FDAE00000A0F /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 890408162BB9FDAE00000A0F /* Roboto-Black.ttf */; };
+		890408242BB9FDAE00000A0F /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 890408172BB9FDAE00000A0F /* Roboto-Light.ttf */; };
+		890408252BB9FDAE00000A0F /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 890408182BB9FDAE00000A0F /* Roboto-LightItalic.ttf */; };
+		8904083C2BB9FDF700000A0F /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 890408262BB9FDF700000A0F /* Montserrat-Bold.ttf */; };
+		8904083D2BB9FDF700000A0F /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 890408272BB9FDF700000A0F /* Montserrat-SemiBold.ttf */; };
+		8904083E2BB9FDF700000A0F /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 890408282BB9FDF700000A0F /* Montserrat-SemiBoldItalic.ttf */; };
+		8904083F2BB9FDF700000A0F /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 890408292BB9FDF700000A0F /* README.txt */; };
+		890408402BB9FDF700000A0F /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8904082A2BB9FDF700000A0F /* Montserrat-ExtraBoldItalic.ttf */; };
+		890408412BB9FDF700000A0F /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8904082B2BB9FDF700000A0F /* Montserrat-Regular.ttf */; };
+		890408422BB9FDF700000A0F /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8904082C2BB9FDF700000A0F /* Montserrat-MediumItalic.ttf */; };
+		890408432BB9FDF700000A0F /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8904082D2BB9FDF700000A0F /* Montserrat-Medium.ttf */; };
+		890408442BB9FDF700000A0F /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8904082E2BB9FDF700000A0F /* Montserrat-BoldItalic.ttf */; };
+		890408452BB9FDF700000A0F /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8904082F2BB9FDF700000A0F /* Montserrat-Thin.ttf */; };
+		890408462BB9FDF700000A0F /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 890408302BB9FDF700000A0F /* Montserrat-ThinItalic.ttf */; };
+		890408472BB9FDF700000A0F /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 890408312BB9FDF700000A0F /* OFL.txt */; };
+		890408482BB9FDF700000A0F /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 890408322BB9FDF700000A0F /* Montserrat-ExtraLightItalic.ttf */; };
+		890408492BB9FDF700000A0F /* Montserrat-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 890408332BB9FDF700000A0F /* Montserrat-VariableFont_wght.ttf */; };
+		8904084A2BB9FDF700000A0F /* Montserrat-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 890408342BB9FDF700000A0F /* Montserrat-Italic-VariableFont_wght.ttf */; };
+		8904084B2BB9FDF700000A0F /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 890408352BB9FDF700000A0F /* Montserrat-LightItalic.ttf */; };
+		8904084C2BB9FDF700000A0F /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 890408362BB9FDF700000A0F /* Montserrat-BlackItalic.ttf */; };
+		8904084D2BB9FDF700000A0F /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 890408372BB9FDF700000A0F /* Montserrat-Black.ttf */; };
+		8904084E2BB9FDF700000A0F /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 890408382BB9FDF700000A0F /* Montserrat-ExtraLight.ttf */; };
+		8904084F2BB9FDF700000A0F /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 890408392BB9FDF700000A0F /* Montserrat-ExtraBold.ttf */; };
+		890408502BB9FDF700000A0F /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8904083A2BB9FDF700000A0F /* Montserrat-Light.ttf */; };
+		890408512BB9FDF700000A0F /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8904083B2BB9FDF700000A0F /* Montserrat-Italic.ttf */; };
+		89075C1B2BB84E05003023B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C1A2BB84E05003023B7 /* AppDelegate.swift */; };
+		89075C1D2BB84E05003023B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C1C2BB84E05003023B7 /* SceneDelegate.swift */; };
+		89075C1F2BB84E05003023B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C1E2BB84E05003023B7 /* ViewController.swift */; };
+		89075C252BB84E05003023B7 /* iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 89075C232BB84E05003023B7 /* iOS.xcdatamodeld */; };
+		89075C272BB84E06003023B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89075C262BB84E06003023B7 /* Assets.xcassets */; };
+		89075C332BB858C6003023B7 /* iOS.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 89075C322BB858C6003023B7 /* iOS.xcconfig */; };
+		89075C352BB8596F003023B7 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C342BB8596F003023B7 /* Environment.swift */; };
+		89075C382BB85A70003023B7 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C372BB85A70003023B7 /* Constraints.swift */; };
+		89075C3A2BB85A98003023B7 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C392BB85A98003023B7 /* UIColor.swift */; };
+		89075C3C2BB85AB2003023B7 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C3B2BB85AB2003023B7 /* UIView.swift */; };
+		89075C3E2BB85AC9003023B7 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C3D2BB85AC9003023B7 /* UIViewController.swift */; };
+		89075C412BB85AFF003023B7 /* TableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C402BB85AFF003023B7 /* TableViewProvider.swift */; };
+		89075C442BB85B2E003023B7 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C432BB85B2E003023B7 /* CollectionView.swift */; };
+		89075C462BB85B49003023B7 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C452BB85B49003023B7 /* CollectionViewCell.swift */; };
+		89075C482BB85B6D003023B7 /* CollectionViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C472BB85B6D003023B7 /* CollectionViewProvider.swift */; };
+		89075C4A2BB85BB9003023B7 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 89075C492BB85BB9003023B7 /* Localizable.xcstrings */; };
+		89075C4C2BB8916D003023B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89075C282BB84E06003023B7 /* LaunchScreen.storyboard */; };
+		89075C4E2BB8C157003023B7 /* SplashScreenAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C4D2BB8C157003023B7 /* SplashScreenAnimation.swift */; };
+		89075C532BB8CCF4003023B7 /* KeychainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C522BB8CCF4003023B7 /* KeychainItem.swift */; };
+		89075C562BB976A6003023B7 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C552BB976A6003023B7 /* Network.swift */; };
+		89075C5B2BB9C1D0003023B7 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C5A2BB9C1D0003023B7 /* AuthController.swift */; };
+		89075C5E2BB9D566003023B7 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89075C5D2BB9D566003023B7 /* Account.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		890408062BB9FBC100000A0F /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
+		8904080C2BB9FDAD00000A0F /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		8904080D2BB9FDAD00000A0F /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		8904080E2BB9FDAD00000A0F /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		8904080F2BB9FDAD00000A0F /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		890408102BB9FDAD00000A0F /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		890408112BB9FDAD00000A0F /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		890408122BB9FDAE00000A0F /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		890408132BB9FDAE00000A0F /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		890408142BB9FDAE00000A0F /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		890408152BB9FDAE00000A0F /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		890408162BB9FDAE00000A0F /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		890408172BB9FDAE00000A0F /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		890408182BB9FDAE00000A0F /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		890408262BB9FDF700000A0F /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		890408272BB9FDF700000A0F /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		890408282BB9FDF700000A0F /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		890408292BB9FDF700000A0F /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		8904082A2BB9FDF700000A0F /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		8904082B2BB9FDF700000A0F /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		8904082C2BB9FDF700000A0F /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
+		8904082D2BB9FDF700000A0F /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		8904082E2BB9FDF700000A0F /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
+		8904082F2BB9FDF700000A0F /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		890408302BB9FDF700000A0F /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
+		890408312BB9FDF700000A0F /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		890408322BB9FDF700000A0F /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		890408332BB9FDF700000A0F /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		890408342BB9FDF700000A0F /* Montserrat-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		890408352BB9FDF700000A0F /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
+		890408362BB9FDF700000A0F /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
+		890408372BB9FDF700000A0F /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		890408382BB9FDF700000A0F /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		890408392BB9FDF700000A0F /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		8904083A2BB9FDF700000A0F /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		8904083B2BB9FDF700000A0F /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
+		89075C172BB84E05003023B7 /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89075C1A2BB84E05003023B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		89075C1C2BB84E05003023B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		89075C1E2BB84E05003023B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		89075C242BB84E05003023B7 /* iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOS.xcdatamodel; sourceTree = "<group>"; };
+		89075C262BB84E06003023B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		89075C292BB84E06003023B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89075C2B2BB84E06003023B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89075C2F2BB84E1E003023B7 /* iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOS.entitlements; sourceTree = "<group>"; };
+		89075C322BB858C6003023B7 /* iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = iOS.xcconfig; sourceTree = "<group>"; };
+		89075C342BB8596F003023B7 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		89075C372BB85A70003023B7 /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		89075C392BB85A98003023B7 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		89075C3B2BB85AB2003023B7 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		89075C3D2BB85AC9003023B7 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		89075C402BB85AFF003023B7 /* TableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProvider.swift; sourceTree = "<group>"; };
+		89075C432BB85B2E003023B7 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		89075C452BB85B49003023B7 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		89075C472BB85B6D003023B7 /* CollectionViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewProvider.swift; sourceTree = "<group>"; };
+		89075C492BB85BB9003023B7 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		89075C4D2BB8C157003023B7 /* SplashScreenAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenAnimation.swift; sourceTree = "<group>"; };
+		89075C522BB8CCF4003023B7 /* KeychainItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItem.swift; sourceTree = "<group>"; };
+		89075C552BB976A6003023B7 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		89075C5A2BB9C1D0003023B7 /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
+		89075C5D2BB9D566003023B7 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89075C142BB84E05003023B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
+		890408082BB9FD1A00000A0F /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				890408092BB9FD6400000A0F /* fonts */,
+				890408062BB9FBC100000A0F /* FontManager.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		890408092BB9FD6400000A0F /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8904080B2BB9FD7F00000A0F /* montserrat */,
+				8904080A2BB9FD7700000A0F /* roboto */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		8904080A2BB9FD7700000A0F /* roboto */ = {
+			isa = PBXGroup;
+			children = (
+				890408112BB9FDAD00000A0F /* LICENSE.txt */,
+				890408162BB9FDAE00000A0F /* Roboto-Black.ttf */,
+				890408132BB9FDAE00000A0F /* Roboto-BlackItalic.ttf */,
+				8904080F2BB9FDAD00000A0F /* Roboto-Bold.ttf */,
+				890408102BB9FDAD00000A0F /* Roboto-BoldItalic.ttf */,
+				8904080C2BB9FDAD00000A0F /* Roboto-Italic.ttf */,
+				890408172BB9FDAE00000A0F /* Roboto-Light.ttf */,
+				890408182BB9FDAE00000A0F /* Roboto-LightItalic.ttf */,
+				8904080D2BB9FDAD00000A0F /* Roboto-Medium.ttf */,
+				890408142BB9FDAE00000A0F /* Roboto-MediumItalic.ttf */,
+				890408152BB9FDAE00000A0F /* Roboto-Regular.ttf */,
+				8904080E2BB9FDAD00000A0F /* Roboto-Thin.ttf */,
+				890408122BB9FDAE00000A0F /* Roboto-ThinItalic.ttf */,
+			);
+			path = roboto;
+			sourceTree = "<group>";
+		};
+		8904080B2BB9FD7F00000A0F /* montserrat */ = {
+			isa = PBXGroup;
+			children = (
+				890408372BB9FDF700000A0F /* Montserrat-Black.ttf */,
+				890408362BB9FDF700000A0F /* Montserrat-BlackItalic.ttf */,
+				890408262BB9FDF700000A0F /* Montserrat-Bold.ttf */,
+				8904082E2BB9FDF700000A0F /* Montserrat-BoldItalic.ttf */,
+				890408392BB9FDF700000A0F /* Montserrat-ExtraBold.ttf */,
+				8904082A2BB9FDF700000A0F /* Montserrat-ExtraBoldItalic.ttf */,
+				890408382BB9FDF700000A0F /* Montserrat-ExtraLight.ttf */,
+				890408322BB9FDF700000A0F /* Montserrat-ExtraLightItalic.ttf */,
+				890408342BB9FDF700000A0F /* Montserrat-Italic-VariableFont_wght.ttf */,
+				8904083B2BB9FDF700000A0F /* Montserrat-Italic.ttf */,
+				8904083A2BB9FDF700000A0F /* Montserrat-Light.ttf */,
+				890408352BB9FDF700000A0F /* Montserrat-LightItalic.ttf */,
+				8904082D2BB9FDF700000A0F /* Montserrat-Medium.ttf */,
+				8904082C2BB9FDF700000A0F /* Montserrat-MediumItalic.ttf */,
+				8904082B2BB9FDF700000A0F /* Montserrat-Regular.ttf */,
+				890408272BB9FDF700000A0F /* Montserrat-SemiBold.ttf */,
+				890408282BB9FDF700000A0F /* Montserrat-SemiBoldItalic.ttf */,
+				8904082F2BB9FDF700000A0F /* Montserrat-Thin.ttf */,
+				890408302BB9FDF700000A0F /* Montserrat-ThinItalic.ttf */,
+				890408332BB9FDF700000A0F /* Montserrat-VariableFont_wght.ttf */,
+				890408312BB9FDF700000A0F /* OFL.txt */,
+				890408292BB9FDF700000A0F /* README.txt */,
+			);
+			path = montserrat;
+			sourceTree = "<group>";
+		};
 		89075BEF2BB84B98003023B7 = {
 			isa = PBXGroup;
 			children = (
+				89075C192BB84E05003023B7 /* iOS */,
+				89075C182BB84E05003023B7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
+		89075C182BB84E05003023B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89075C172BB84E05003023B7 /* iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89075C192BB84E05003023B7 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				89075C312BB84E39003023B7 /* App */,
+				89075C302BB84E32003023B7 /* Resource */,
+				89075C362BB85A43003023B7 /* Extension */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		89075C302BB84E32003023B7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				89075C2F2BB84E1E003023B7 /* iOS.entitlements */,
+				89075C262BB84E06003023B7 /* Assets.xcassets */,
+				89075C282BB84E06003023B7 /* LaunchScreen.storyboard */,
+				89075C2B2BB84E06003023B7 /* Info.plist */,
+				89075C232BB84E05003023B7 /* iOS.xcdatamodeld */,
+				89075C322BB858C6003023B7 /* iOS.xcconfig */,
+				89075C492BB85BB9003023B7 /* Localizable.xcstrings */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		89075C312BB84E39003023B7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				89075C4B2BB85E98003023B7 /* Main */,
+				89075C1A2BB84E05003023B7 /* AppDelegate.swift */,
+				89075C1C2BB84E05003023B7 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		89075C362BB85A43003023B7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				890408082BB9FD1A00000A0F /* Font */,
+				89075C5C2BB9D55F003023B7 /* Account */,
+				89075C542BB97680003023B7 /* Network */,
+				89075C4F2BB8C1C3003023B7 /* SplashScreen */,
+				89075C422BB85B15003023B7 /* CollectionView */,
+				89075C3F2BB85AF3003023B7 /* TableView */,
+				89075C372BB85A70003023B7 /* Constraints.swift */,
+				89075C342BB8596F003023B7 /* Environment.swift */,
+				89075C392BB85A98003023B7 /* UIColor.swift */,
+				89075C3B2BB85AB2003023B7 /* UIView.swift */,
+				89075C3D2BB85AC9003023B7 /* UIViewController.swift */,
+				89075C522BB8CCF4003023B7 /* KeychainItem.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		89075C3F2BB85AF3003023B7 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				89075C402BB85AFF003023B7 /* TableViewProvider.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		89075C422BB85B15003023B7 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				89075C432BB85B2E003023B7 /* CollectionView.swift */,
+				89075C452BB85B49003023B7 /* CollectionViewCell.swift */,
+				89075C472BB85B6D003023B7 /* CollectionViewProvider.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		89075C4B2BB85E98003023B7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				89075C1E2BB84E05003023B7 /* ViewController.swift */,
+				89075C5A2BB9C1D0003023B7 /* AuthController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		89075C4F2BB8C1C3003023B7 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				89075C4D2BB8C157003023B7 /* SplashScreenAnimation.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		89075C542BB97680003023B7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				89075C552BB976A6003023B7 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		89075C5C2BB9D55F003023B7 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				89075C5D2BB9D566003023B7 /* Account.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89075C162BB84E05003023B7 /* iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89075C2E2BB84E06003023B7 /* Build configuration list for PBXNativeTarget "iOS" */;
+			buildPhases = (
+				89075C132BB84E05003023B7 /* Sources */,
+				89075C142BB84E05003023B7 /* Frameworks */,
+				89075C152BB84E05003023B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOS;
+			productName = iOS;
+			productReference = 89075C172BB84E05003023B7 /* iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		89075BF02BB84B98003023B7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					89075C162BB84E05003023B7 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
 			};
 			buildConfigurationList = 89075BF32BB84B98003023B7 /* Build configuration list for PBXProject "airlance" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -29,25 +371,300 @@
 			knownRegions = (
 				en,
 				Base,
+				it,
+				ru,
+				uk,
+				es,
+				fr,
 			);
 			mainGroup = 89075BEF2BB84B98003023B7;
+			productRefGroup = 89075C182BB84E05003023B7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				89075C162BB84E05003023B7 /* iOS */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89075C152BB84E05003023B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				890408442BB9FDF700000A0F /* Montserrat-BoldItalic.ttf in Resources */,
+				8904084D2BB9FDF700000A0F /* Montserrat-Black.ttf in Resources */,
+				890408452BB9FDF700000A0F /* Montserrat-Thin.ttf in Resources */,
+				8904081D2BB9FDAE00000A0F /* Roboto-BoldItalic.ttf in Resources */,
+				8904084C2BB9FDF700000A0F /* Montserrat-BlackItalic.ttf in Resources */,
+				890408432BB9FDF700000A0F /* Montserrat-Medium.ttf in Resources */,
+				8904081B2BB9FDAE00000A0F /* Roboto-Thin.ttf in Resources */,
+				890408412BB9FDF700000A0F /* Montserrat-Regular.ttf in Resources */,
+				890408232BB9FDAE00000A0F /* Roboto-Black.ttf in Resources */,
+				890408212BB9FDAE00000A0F /* Roboto-MediumItalic.ttf in Resources */,
+				89075C272BB84E06003023B7 /* Assets.xcassets in Resources */,
+				8904081F2BB9FDAE00000A0F /* Roboto-ThinItalic.ttf in Resources */,
+				890408242BB9FDAE00000A0F /* Roboto-Light.ttf in Resources */,
+				8904084E2BB9FDF700000A0F /* Montserrat-ExtraLight.ttf in Resources */,
+				8904084B2BB9FDF700000A0F /* Montserrat-LightItalic.ttf in Resources */,
+				89075C4A2BB85BB9003023B7 /* Localizable.xcstrings in Resources */,
+				890408502BB9FDF700000A0F /* Montserrat-Light.ttf in Resources */,
+				8904081A2BB9FDAE00000A0F /* Roboto-Medium.ttf in Resources */,
+				890408422BB9FDF700000A0F /* Montserrat-MediumItalic.ttf in Resources */,
+				890408192BB9FDAE00000A0F /* Roboto-Italic.ttf in Resources */,
+				8904083D2BB9FDF700000A0F /* Montserrat-SemiBold.ttf in Resources */,
+				890408222BB9FDAE00000A0F /* Roboto-Regular.ttf in Resources */,
+				890408482BB9FDF700000A0F /* Montserrat-ExtraLightItalic.ttf in Resources */,
+				890408252BB9FDAE00000A0F /* Roboto-LightItalic.ttf in Resources */,
+				890408512BB9FDF700000A0F /* Montserrat-Italic.ttf in Resources */,
+				890408472BB9FDF700000A0F /* OFL.txt in Resources */,
+				890408202BB9FDAE00000A0F /* Roboto-BlackItalic.ttf in Resources */,
+				89075C4C2BB8916D003023B7 /* LaunchScreen.storyboard in Resources */,
+				8904083C2BB9FDF700000A0F /* Montserrat-Bold.ttf in Resources */,
+				8904081C2BB9FDAE00000A0F /* Roboto-Bold.ttf in Resources */,
+				8904084A2BB9FDF700000A0F /* Montserrat-Italic-VariableFont_wght.ttf in Resources */,
+				890408462BB9FDF700000A0F /* Montserrat-ThinItalic.ttf in Resources */,
+				8904081E2BB9FDAE00000A0F /* LICENSE.txt in Resources */,
+				8904083E2BB9FDF700000A0F /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				8904083F2BB9FDF700000A0F /* README.txt in Resources */,
+				89075C332BB858C6003023B7 /* iOS.xcconfig in Resources */,
+				890408402BB9FDF700000A0F /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+				890408492BB9FDF700000A0F /* Montserrat-VariableFont_wght.ttf in Resources */,
+				8904084F2BB9FDF700000A0F /* Montserrat-ExtraBold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89075C132BB84E05003023B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89075C3C2BB85AB2003023B7 /* UIView.swift in Sources */,
+				89075C1F2BB84E05003023B7 /* ViewController.swift in Sources */,
+				89075C562BB976A6003023B7 /* Network.swift in Sources */,
+				89075C532BB8CCF4003023B7 /* KeychainItem.swift in Sources */,
+				89075C482BB85B6D003023B7 /* CollectionViewProvider.swift in Sources */,
+				89075C5E2BB9D566003023B7 /* Account.swift in Sources */,
+				89075C462BB85B49003023B7 /* CollectionViewCell.swift in Sources */,
+				89075C3E2BB85AC9003023B7 /* UIViewController.swift in Sources */,
+				89075C3A2BB85A98003023B7 /* UIColor.swift in Sources */,
+				89075C1B2BB84E05003023B7 /* AppDelegate.swift in Sources */,
+				89075C4E2BB8C157003023B7 /* SplashScreenAnimation.swift in Sources */,
+				89075C1D2BB84E05003023B7 /* SceneDelegate.swift in Sources */,
+				890408072BB9FBC100000A0F /* FontManager.swift in Sources */,
+				89075C412BB85AFF003023B7 /* TableViewProvider.swift in Sources */,
+				89075C252BB84E05003023B7 /* iOS.xcdatamodeld in Sources */,
+				89075C5B2BB9C1D0003023B7 /* AuthController.swift in Sources */,
+				89075C382BB85A70003023B7 /* Constraints.swift in Sources */,
+				89075C442BB85B2E003023B7 /* CollectionView.swift in Sources */,
+				89075C352BB8596F003023B7 /* Environment.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		89075C282BB84E06003023B7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89075C292BB84E06003023B7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		89075BF42BB84B99003023B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 			};
 			name = Debug;
 		};
 		89075BF52BB84B99003023B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Release;
+		};
+		89075C2C2BB84E06003023B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89075C322BB858C6003023B7 /* iOS.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = iOS/Resource/iOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = K682D44QJG;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iOS/Resource/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Airlance;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.airlance.iOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89075C2D2BB84E06003023B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89075C322BB858C6003023B7 /* iOS.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = iOS/Resource/iOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = K682D44QJG;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iOS/Resource/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Airlance;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.airlance.iOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -63,7 +680,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		89075C2E2BB84E06003023B7 /* Build configuration list for PBXNativeTarget "iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89075C2C2BB84E06003023B7 /* Debug */,
+				89075C2D2BB84E06003023B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		89075C232BB84E05003023B7 /* iOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				89075C242BB84E05003023B7 /* iOS.xcdatamodel */,
+			);
+			currentVersion = 89075C242BB84E05003023B7 /* iOS.xcdatamodel */;
+			path = iOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 89075BF02BB84B98003023B7 /* Project object */;
 }
